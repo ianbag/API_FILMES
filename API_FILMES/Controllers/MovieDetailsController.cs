@@ -47,6 +47,7 @@ namespace API_FILMES.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutMovieDetail(int id, MovieDetail movieDetail)
         {
+            // Necessario passar id no body da request
             if (id != movieDetail.MVId)
             {
                 return BadRequest();

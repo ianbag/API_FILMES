@@ -22,6 +22,7 @@ namespace API_FILMES.Models
 
         [Required]
         [Column(TypeName = "date")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime DataLancamento { get; set; }
 
         
